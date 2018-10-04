@@ -46,7 +46,7 @@ ul.sidenav li a {
 
 ul.sidenav li a.active {
     /* background-color: rgb(221, 83, 40); */
-    color: white;
+    /* color: white; */
 }
 
 ul.sidenav li a:hover:not(.active) {
@@ -120,6 +120,7 @@ div.content {
 }
 
 .cparallax {
+  padding-top: 15%;
   /* The image used */
   background-image: url('images/back5.jpeg');
 
@@ -133,8 +134,21 @@ div.content {
   background-size: cover;
 }
 
+.cparallax li a {
+  text-align: center;
+  margin-left: 42.7%;
+  font-size: 8vh;
+}
 
+.col img{
+  height: 25%;
 
+}
+
+/* .size {
+  max-height: 15%;
+  max-width: 52%;
+} */
 
 
 #pjct {
@@ -142,12 +156,23 @@ div.content {
   padding: 3% 20% 5% 20%;
 }
 
-.col {
-  max-width: 40%;
+.cole {
+  max-width: 52%;
+}
+
+.cole img {
+  width: 100%;
+  height: 30vh;
+  object-fit:cover;
+  border: thin solid black;
 }
 
 .projects {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  grid-column-gap: 2%;
   /* margin-left: 15%;
   margin-right: 13%; */
   padding: 3% 15% 5% 20%
@@ -155,6 +180,38 @@ div.content {
 
 
 
+
+
+
+.bottom {
+  overflow: hidden;
+   /* background-color: #333; */
+   /* position: fixed; */
+   bottom: 0;
+   width: 100%;
+   margin-left: 38%;
+}
+
+.bottom a {
+  float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+.bottom i {
+  font-size: 12vh;
+  color: black;
+}
+
+.cparallax h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 8vh;
+}
 
 
 @media screen and (max-width: 900px) {
@@ -180,6 +237,10 @@ div.content {
 
     .summary {
       height: 190vh;
+    }
+
+    .col img{
+      height: 17%;
     }
 
 }
