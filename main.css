@@ -24,7 +24,7 @@ body, html {
 
 ul.sidenav {
     list-style-type: none;
-    margin: 0;
+    margin-top: 13%;
     padding: 0;
     width: 15%;
     /* background-color: #f1f1f1; */
@@ -73,8 +73,8 @@ div.content {
 
 .mytitle {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 15vh;
-  margin-left: 10%;
+  font-size: 6vh;
+  /* margin-left: 10%; */
 }
 
 
@@ -98,6 +98,7 @@ div.content {
   background-color:rgba(218, 223, 232, 0.5);
   font-size: 3vh;
   font-family: 'Raleway', sans-serif;
+
 }
 
 .summary  {
@@ -118,6 +119,44 @@ div.content {
   background-size: cover;
 }
 
+.cparallax {
+  /* The image used */
+  background-image: url('images/back5.jpeg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+#pjct {
+  text-align: center;
+  padding: 3% 20% 5% 20%;
+}
+
+.col {
+  max-width: 40%;
+}
+
+.projects {
+  align-items: center;
+  /* margin-left: 15%;
+  margin-right: 13%; */
+  padding: 3% 15% 5% 20%
+}
+
+
+
+
+
 @media screen and (max-width: 900px) {
     ul.sidenav {
         width: 100%;
@@ -129,7 +168,22 @@ div.content {
         padding: 15px;
     }
     div.content {margin-left: 0;}
+
+    .name {
+      font-size: 398%;
+      color: white;
+    }
+
+    .mytitle {
+      color: white;
+    }
+
+    .summary {
+      height: 190vh;
+    }
+
 }
+
 
 @media screen and (max-width: 400px) {
     ul.sidenav li a {
@@ -137,18 +191,3 @@ div.content {
         float: none;
     }
 }
-
-
-
-/* @media screen {
-  .name {
-    font-size: 398%;
-    color: white;
-  }
-}
-
-@media screen {
-  .mytitle {
-    color: white;
-  }
-} */
